@@ -8,7 +8,7 @@ llm = ChatGroq(
     model="llama-3.3-70b-versatile",
     temperature = 1.2
 )
-
-response = llm.invoke("Write five lines joke about mlops engineer.")
+query = input("Enter your query here: ")
+response = llm.invoke(query)
 
 print(response.content)
